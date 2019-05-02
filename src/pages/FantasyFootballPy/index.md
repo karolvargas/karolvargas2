@@ -4,7 +4,7 @@ date: "2019-02-05"
 featuredImage: './featured.jpg'
 ---
 
-#link to repository: https://github.com/karolvargas/TerminalFantasyNFL
+link to repository: https://github.com/karolvargas/TerminalFantasyNFL
 
 
 
