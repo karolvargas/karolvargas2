@@ -1,6 +1,6 @@
 ---
 title: Senior Thesis Update
-date: "2019-02-05"
+date: "2019-04-25"
 featuredImage: './featured.jpg'
 ---
 
@@ -39,4 +39,4 @@ With this I also got familiar with jQuery, JSON, Ajax, ExpressJS, etc. All of th
 difficulties but none like jQuery I must say. Dealing with JSON data can be comfortable since it is the standard
 format for most RestAPI's but the syntax was very confusing since I was not familiar with the dollar sign nor was
 I familiar with the actual processes of the program. With a lot of trial by fire however I was able to demonstrate
-and understand more deeply what it is they do on a basic level. 
+and understand more deeply what it is they do on a basic level.

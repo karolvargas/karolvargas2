@@ -1,6 +1,6 @@
 ---
 title: Blog Update May 2nd
-date: "2018-05-02"
+date: "2019-05-02"
 ---
 
 ##QuizAGator 1.0.0
