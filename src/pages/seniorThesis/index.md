@@ -18,3 +18,9 @@ cargo and of software to create an application which can make a huge impact. The
 way logistics works is simple but a little complicated too. I will first go into detail
 on the life cycle of an order in LSP(Logistic Service Providers) Cargo Inc. and how
 it differs from one of the bigger shipping companies such as FedEx or USPS.
+
+## Technologies Used
+
+![](image.png)
+
+  The main technologies used when It came to 
