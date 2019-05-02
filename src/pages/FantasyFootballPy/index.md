@@ -9,7 +9,7 @@ featuredImage: './featured.jpg'
 
 
 
-Python app to look at NFLstat leaders from week to week up to the 2017 season. Feel free to edit this code how you like. For deeper documentation into the NFLGame library feel free to visit https://github.com/BurntSushi/nflgame for info into creating your own application. To process user input was a little bit tricky since we had to create a tuple to handle to different variable types. The documentation on the actual datatypes being processed by the RestAPI was not very well but below I have a attached a snippet of a function which takes in user input as the multiple paramaters required to get the JSON information from GameCenter. This example will demonstrate how the code works if someone wanted to see the top passers in week 5 of 2008. REMEMBER YOU RUN "python2" and not "python" or "python3" when running the proram.:
+Python command line application to look at NFL stat leaders from week to week up to the 2017 season. Feel free to edit this code how you like. For deeper documentation into the NFLGame library feel free to visit https://github.com/BurntSushi/nflgame for info into creating your own application. To process user input was a little bit tricky since we had to create a tuple to handle to different variable types. The documentation on the actual datatypes being processed by the RestAPI was not very well but below I have a attached a snippet of a function which takes in user input as the multiple paramaters required to get the JSON information from GameCenter. This example will demonstrate how the code works if someone wanted to see the top passers in week 5 of 2008. REMEMBER YOU RUN "python2" and not "python" or "python3" when running the proram.:
 
 ```
 import nflgame
