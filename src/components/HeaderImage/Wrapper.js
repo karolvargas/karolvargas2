@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   width: 150px;
 
   img {
-    padding: 5px;
+    padding: 0px;
     border-radius: 50%;
   }
 `;
