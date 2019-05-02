@@ -1,62 +1,90 @@
 ---
-title: Welcome to the Blog!
+title: Awards and Achievements
 date: "2018-07-01"
 featuredImage: './featured.jpg'
 ---
 
-Welcome to the new blog, I hope you enjoy your stay! This is an example of how you can control what excerpt shows up.
+To this point in the semester we have been updating the gatorgrader program for entry level students to be able to test and check their code before their final submission. We split these updates and improvement tasks into teams of 5. My team was tasked with the challenge of parsing over commit messages and ensuring that when the parser that is implemented to count the ammount of words in the code as well as count how many lines of code and comments there are in the submission was going to correctly count the lines in different subsets in markdown files.
 
-<!-- end -->
+These subsets include things such as lists, split paragraphs, as well as parsing over code blocks in markdown syntax. The first step we took was identifying what subsets the program incorrectly parsed or did not parse at all were and how travis reads markdown. We identified lists as one major one as the word count was the same when we had and did not have a list. As well as paragraph count would be two if there was a list in the same paragraph block instead of counting it as one whole paragraph. I worked on parsing over commit messages and ensuring the word count was present and people were not just putting random commit mesages (i.e. "asdf", "commit", "I hate my life", etc.)
 
-## Lorem ipsum dolor sit amet, consectetur adipiscing elit
+Commit messages are very important when it comes to large software projects because they can help people who are reading the code for the first time better understand the organization of the program. This can also lead to a lot of time saved when it comes to looking back over code you may not have seen in a while and being able to see exactly what each bit of code that you added does.
 
-Sed urna justo, scelerisque consectetur pharetra vitae, facilisis vel diam. Maecenas auctor enim a volutpat mattis. Morbi sit amet turpis a purus ornare pellentesque sit amet et ipsum. Suspendisse imperdiet mi at felis aliquet, nec consectetur arcu dignissim. Sed vitae diam maximus, maximus diam ac, scelerisque mi.
+##Pytest Commands
 
-*   Morbi sit amet turpis a purus
-*   Etiam tempor ultricies mi
-    *   Maecenas auctor enim a volutpat mattis
-*   Sed urna justo, scelerisque consectetur pharetra vitae
+Another Issue I was assigned in gatorgrader was adding new pytest commands that would allow for students to be able to run specific tests that failed or passed. Pytest has all these functions so it was a matter of researching code that the students would be able to learn quickly and provide examples as well. Below is an example of using ```-rfs```. ```-r``` options accepts a number of characters after it, with a used above meaning “all except passes”. ```-f``` specifies failed and ```-s``` specifies skipped test. :
 
-Nam nec augue vel nisl placerat faucibus. Donec congue **nulla quis nunc** sagittis placerat. Pellentesque non tincidunt velit, cursus porttitor tellus. Suspendisse pulvinar tortor at _augue aliquam sagittis_. Duis non pulvinar augue. Ut tristique dignissim ligula, eget tempus diam molestie non. Nulla ultrices eleifend rutrum. Mauris convallis sollicitudin dui, pulvinar suscipit velit. Maecenas viverra finibus metus vitae blandit.
 
-### Pellentesque consectetur facilisis venenatis
 
-Nam ullamcorper, orci nec tempor hendrerit, lorem nunc laoreet diam, vel gravida sem mi quis augue. Nunc odio velit, facilisis quis dictum non, facilisis quis felis. Vivamus [elementum dapibus nibh](https://google.com), eget aliquet nunc luctus maximus. Sed finibus risus eget ultrices maximus. Aliquam commodo consectetur diam eget tristique. Nunc quis erat quis felis fringilla tempus. Cras tempor nibh dolor, ac lacinia lacus ultrices eu.
 
-> Quisque tempor nulla turpis, ut placerat arcu lobortis nec. Aenean sed vehicula nisi. Nullam vitae placerat enim. Etiam hendrerit enim vel tempor fermentum. Morbi rutrum euismod ipsum a luctus.
+```
+$ pytest -rfs
+=========================== test session starts ============================
+platform linux -- Python 3.x.y, pytest-4.x.y, py-1.x.y, pluggy-0.x.y
+cachedir: $PYTHON_PREFIX/.pytest_cache
+rootdir: $REGENDOC_TMPDIR, inifile:
+collected 6 items
 
-Morbi et libero id metus tempor imperdiet eget non mi. Mauris pulvinar quis enim at placerat. Vestibulum vitae dapibus lectus, ut elementum est.
+test_example.py .FEsxX                                               [100%]
 
-### Pellentesque facilisis venenatis mi, sit amet molestie nisl ornare et
+================================== ERRORS ==================================
+_______________________ ERROR at setup of test_error _______________________
 
-Morbi posuere facilisis eros vel euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam malesuada dapibus dolor non cursus. Sed in turpis justo. Cras sed hendrerit nulla. Sed ornare, leo et suscipit tincidunt, justo diam sollicitudin risus, vitae vulputate nulla augue et lacus.
+    @pytest.fixture
+    def error_fixture():
+>       assert 0
+E       assert 0
 
-1.  Morbi posuere facilisis
-2.  Pellentesque habitant morbi tristique
-3.  Etiam malesuada dapibus
+test_example.py:6: AssertionError
+================================= FAILURES =================================
+________________________________ test_fail _________________________________
 
-Ut vel ligula ante. Proin quis metus magna. Nulla nec dui vulputate, semper orci in, sagittis dolor. Mauris dictum neque non fermentum consectetur. Integer vel pellentesque ex, ut tincidunt quam.
+    def test_fail():
+>       assert 0
+E       assert 0
 
-#### Sed ac orci a dolor venenatis vulputate
+test_example.py:14: AssertionError
+========================= short test summary info ==========================
+FAILED test_example.py::test_fail
+SKIPPED [1] $REGENDOC_TMPDIR/test_example.py:23: skipping this test
+ 1 failed, 1 passed, 1 skipped, 1 xfailed, 1 xpassed, 1 error in 0.12 seconds
+Using p lists the passing tests, whilst P adds an extra section “PASSES” with those tests that passed but had captured output:
 
-Sed sollicitudin, turpis ac malesuada dapibus, magna dui semper orci, in congue justo felis quis ante. Phasellus consequat et dolor fringilla accumsan. Pellentesque ullamcorper porttitor dolor et imperdiet.
+$ pytest -rpP
+=========================== test session starts ============================
+platform linux -- Python 3.x.y, pytest-4.x.y, py-1.x.y, pluggy-0.x.y
+cachedir: $PYTHON_PREFIX/.pytest_cache
+rootdir: $REGENDOC_TMPDIR, inifile:
+collected 6 items
 
-![Space](./space.jpg)
+test_example.py .FEsxX                                               [100%]
 
-Pellentesque consectetur facilisis venenatis. Nam ullamcorper, orci nec tempor hendrerit, lorem nunc laoreet diam, vel gravida sem mi quis augue. Nunc odio velit, facilisis quis dictum non, facilisis quis felis. Vivamus elementum dapibus nibh, eget aliquet nunc luctus maximus. Sed finibus risus eget ultrices maximus. Aliquam commodo consectetur diam eget tristique. Nunc quis erat quis felis fringilla tempus. Cras tempor nibh dolor, ac lacinia lacus ultrices eu.
+================================== ERRORS ==================================
+_______________________ ERROR at setup of test_error _______________________
 
-##### Nulla nec dui vulputate, semper orci in, sagittis dolor
+    @pytest.fixture
+    def error_fixture():
+>       assert 0
+E       assert 0
 
-Mauris dictum neque non fermentum consectetur. Integer vel pellentesque ex, ut tincidunt quam. Sed ac orci a dolor venenatis vulputate. Sed sollicitudin, turpis ac malesuada dapibus, magna dui semper orci, in congue justo felis quis ante. Phasellus consequat et dolor fringilla accumsan. Pellentesque ullamcorper porttitor dolor et imperdiet.
+test_example.py:6: AssertionError
+================================= FAILURES =================================
+________________________________ test_fail _________________________________
 
-```javascript
-$(document).ready(function() {
-    console.log('More jQuery, wow!')
-})
+    def test_fail():
+>       assert 0
+E       assert 0
+
+test_example.py:14: AssertionError
+========================= short test summary info ==========================
+PASSED test_example.py::test_ok
+================================== PASSES ==================================
+_________________________________ test_ok __________________________________
+--------------------------- Captured stdout call ---------------------------
+ok
+ 1 failed, 1 passed, 1 skipped, 1 xfailed, 1 xpassed, 1 error in 0.12 seconds
 ```
 
-###### ras aliquet ipsum ut enim pellentesque, id varius quam placerat
 
-Maecenas non scelerisque leo. Sed id purus fringilla, consequat magna non, faucibus neque. Cras ornare nisi a lectus ultricies convallis. Integer tristique dictum eros, et elementum ante consectetur eget. Phasellus sollicitudin est vestibulum suscipit pellentesque. Duis in eros cursus magna laoreet aliquam vel a lectus. Nulla ut nisi vitae ipsum sollicitudin vestibulum. Aenean sit amet mattis odio. Vestibulum ultrices sed ipsum nec pretium. Integer non turpis nunc. Praesent tincidunt tincidunt alique
 
-Integer mollis dolor non libero placerat, ut efficitur nisi ultricies. Etiam ac lacinia urna, eget ornare nunc. Suspendisse eget eros id turpis gravida semper. Duis ornare lorem et est pellentesque, quis rhoncus leo vestibulum. Nullam eu nulla ut elit rutrum iaculis. Cras a laoreet elit, in aliquet erat. Sed interdum varius posuere. Pellentesque eget luctus erat. Nam quis sem in ligula efficitur bibendum.
+<!-- end -->
