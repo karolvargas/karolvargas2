@@ -19,8 +19,10 @@ way logistics works is simple but a little complicated too. I will first go into
 on the life cycle of an order in LSP(Logistic Service Providers) Cargo Inc. and how
 it differs from one of the bigger shipping companies such as FedEx or USPS.
 
-## Technologies Used
+##          Projected growth of cargo industry into 2045
 
-![](image.png)
+![as examined by the U.S. Bureau of Labor Statistics](image.png)
 
-  The main technologies used when It came to 
+  There is an ever increasing demand in supply chain at this time due to how entertwined it
+is with ecommerce. Now-a-days one can order something using the internet and be surprised if it
+doesn't get there within 3 days. This also fueled my motivation to accomplish this project. 
