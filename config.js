@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Portfolio Blog', // Required
   author: 'Karol Vargas', // Required
-  description: 'Aspiring Data Scientist',
-  primaryColor: '#3498db', // Required
+  description: 'Aspiring Data Scientist / B.S. in Computer Science',
+  primaryColor: '#250570', // Required
   showHeaderImage: true,
   showShareButtons: true,
   postsPerPage: 5, // Required

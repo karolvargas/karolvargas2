@@ -21,8 +21,22 @@ it differs from one of the bigger shipping companies such as FedEx or USPS.
 
 ##          Projected growth of cargo industry into 2045
 
-![as examined by the U.S. Bureau of Labor Statistics](image.png)
+![](image.png)
+
+
+
 
   There is an ever increasing demand in supply chain at this time due to how entertwined it
 is with ecommerce. Now-a-days one can order something using the internet and be surprised if it
-doesn't get there within 3 days. This also fueled my motivation to accomplish this project. 
+doesn't get there within 3 days. This also fueled my motivation to accomplish this project.
+
+
+
+##          Technologies Used
+
+  The main framework I used was Node.js. With this I was able to host my site on both MySQL and mongodb.
+With this I also got familiar with jQuery, JSON, Ajax, ExpressJS, etc. All of these technologies all had their
+difficulties but none like jQuery I must say. Dealing with JSON data can be comfortable since it is the standard
+format for most RestAPI's but the syntax was very confusing since I was not familiar with the dollar sign nor was
+I familiar with the actual processes of the program. With a lot of trial by fire however I was able to demonstrate
+and understand more deeply what it is they do on a basic level. 
