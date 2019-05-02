@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
   img {
     padding: 0px;
-    border-radius: 100%;
+    border-radius: 30%;
   }
 `;
 
