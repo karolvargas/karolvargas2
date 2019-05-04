@@ -1,5 +1,5 @@
 ---
-title: Fantasy Football Consistency Checker
+title: Honey Encryption Python implementation
 date: "2019-04-05"
 featuredImage: './featured.jpg'
 ---
@@ -84,7 +84,7 @@ def checkCount():
 
     return value
 
-#This is where it gets a little complicated, Ill be as in depth as I can 
+#This is where it gets a little complicated, Ill be as in depth as I can
 def keyGen():
 
     passss = raw_input("please enter password: ")
