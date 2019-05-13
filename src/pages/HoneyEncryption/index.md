@@ -7,13 +7,10 @@ featuredImage: './featured.jpg'
 Honey Encryption is the future of encryption. Now you may ask what is encryption? It is
 the process of converting information or data into a code, especially to prevent unauthorized access.
 Now the key word that we want to focus on here is unauthorized access.
-\n
-\n
 SOO. We are also aware that hacking and cybersecurity exist for a reason. Although there is
 encrypted data there is almost always a way to decrypt that data. With the processing power
 of computers increasing by the day we can see how more and more iterations to enter incorrect
 passwords and eventually 'crack' the password or key.
-\n
 #Now
 What does Honey Encryption do that's different? And is it as delicious as Honey? Well for the latter
 i'm sorry to inform you no. But it can help capture hackers and identity theft. **So how does it work Karol!?**
