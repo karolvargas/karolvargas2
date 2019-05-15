@@ -1,62 +1,33 @@
 ---
-title: Honey Encryption Python implementation
+title: Senior Thesis Final
 date: "2019-05-11"
 featuredImage: './featured.jpg'
 ---
 
-```
+
 Technical Report CS2019-
-```
-```
+
 theRightFit:
 A scalable web-framework for land,
 sea, and air quote estimating for
 Freight Forwarders
-```
-```
+
 Karol Vargas
-```
-```
+
 Submitted to the Faculty of
 The Department of Computer Science
-```
-```
+
 Project Director: Dr. Aravind Mohan
 Second Reader: Dr. Janyl Jumadinova
-```
-```
+
 Allegheny College
 2019
-```
-I hereby recognize and pledge to fulfill my
-responsibilities as defined in the Honor Code, and
-to maintain the integrity of both myself and the
-college community as a whole.
 
-```
-Karol Vargas
-```
-
-```
-ii
-```
-Copyright©c 2019
-
-```
-Karol Vargas
-```
-All rights reserved
-
-
-```
-iii
-```
-```
 KAROL VARGAS. theRightFit:
 A scalable web-framework for land, sea, and air quote estimating for
 Freight Forwarders.
 (Under the direction of Dr. Aravind Mohan.)
-```
+
 ##### ABSTRACT
 
 What I am planning to do for my Senior thesis is to create a scalable web-
@@ -79,18 +50,6 @@ the table of class types for density measurements. This would also hold a table 
 different tariff rates for different countries.
 
 
-```
-iv
-```
-I dedicate this to my family for always supporting me through all my challenges
-and for giving me the confidence to accomplish anything I set my mind to. It has
-never been easy for me wherevever I have gone but I am always up for any challenge
-knowing I have the greatest support in the world.
-I thank youRuddy Sr., Karinna Arias, Jorge, Leila, Alexis, Pamela,
-Ruddito, Didier, Leah, Brandon, Dhalig, and Ashley.
-
-
-## v
 
 # Contents
 
@@ -132,38 +91,6 @@ Ruddito, Didier, Leah, Brandon, Dhalig, and Ashley.
 - A Java Code
 
 
-```
-vii
-```
-# List of Figures
-
-```
-1.1 Detailed workflow of a Cargo Corporation............... 1
-1.2 Increasing demand for Freight Forwarders as reported by US Depart-
-ment of Transportation.......................... 2
-1.3 Current Workflow for LSP Cargo Incorporated............. 4
-1.4 Projected Workflow for LSP Cargo Incorporated............ 5
-1.5 FedEx Shipping calculator........................ 6
-1.6 example of Javascripts geolocation library............... 7
-1.7 example of a D-Container used at LSP Cargo............. 8
-```
-```
-2.1 client server application example.................... 9
-2.2 ”Example of a database in MYSQL which stores different datatype-
-s/citeVeikkolainen”............................ 10
-2.3 ”Example of the method to retain formal data model descriptions be-
-tween server side and browser side objects”............... 12
-2.4 ”Example of the method to retain formal data model descriptions be-
-tween server side and browser side objects”............... 13
-2.5 ”Google Maps location flowchart”.................... 14
-```
-```
-3.1 NodeJS Server demonstrating Client-Server requests.......... 16
-```
-```
-4.1 Hosting local web server on port 3000.................. 30
-4.2 Hosting local web server on port 3000.................. 31
-```
 
 # Chapter 1
 
@@ -185,9 +112,6 @@ way logistics works is simple but a little complicated too. I will first go into
 on the life cycle of an order in LSP(Logistic Service Providers) Cargo Inc. and how
 it differs from one of the bigger shipping companies such as FedEx or USPS.
 
-```
-Figure 1.1: Detailed workflow of a Cargo Corporation
-```
 
 #### 1.1.1 The Process
 
@@ -206,8 +130,7 @@ contract bigger carriers at more convenient times for big suppliers and more rea
 prices to smaller suppliers thanks to licensing. Lets say hypothetically I want to ship
 600 boxes of shoes from Miami to the Dominican Republic.
 
-Figure 1.2: Increasing demand for Freight Forwarders as reported by US Department
-of Transportation
+
 
 The first step if I was placing this order with LSP Cargo would be to either make
 a phone call to a cargo agent or send an email directly to a cargo agent that I would
@@ -250,9 +173,6 @@ delivered to however many places he wants. This is the work flow of LSP Cargo an
 has been that way since 2006. Below is the current workflow of LSP Cargo.
 
 
-```
-Figure 1.3: Current Workflow for LSP Cargo Incorporated
-```
 #### 1.1.2 And in with the New
 
 This business model which has been so successful for so long is aching to have more
@@ -265,9 +185,7 @@ less strain it would put on employees at LSP Cargo and how it can open the door 
 new customers.
 
 
-```
-Figure 1.4: Projected Workflow for LSP Cargo Incorporated
-```
+
 How this workflow differs from larger companies such as FedEx or UPS is through
 human interference and the opportunity for human error. Larger cargo companies
 or companies that are greatly involved in shipping leave little to no tasks to humans
@@ -275,9 +193,7 @@ and automate as much as possible. This allows them to advertise their business t
 much wider audience.
 
 
-```
-Figure 1.5: FedEx Shipping calculator
-```
+
 LSP tends to deal with much larger shipments and for this reason it brings in a
 few big fish but misses out on everything in between the smallest shipment to the
 largest because of its inability to market their services to small time shipments. With
@@ -292,9 +208,7 @@ an algorithm which will take into account what type of shipping method is possib
 between location A and B using the geolocation functions in Javascript.
 
 
-```
-Figure 1.6: example of Javascripts geolocation library
-```
+
 This function would then turn the given locations into longitude and latitude
 points. There are numerous libraries online to find if one is on an island or a continent
 or if it is possible to travel to one place by air land or sea. This would allow the
@@ -316,9 +230,7 @@ The program will check from largest to smallest and see what is the container wh
 can hold the most of these dimensions while taking up the least amount of space.
 
 
-```
-Figure 1.7: example of a D-Container used at LSP Cargo
-```
+
 ### 1.3 Challenges
 
 One of the biggest challenges when faced with international shipping is surprise fees.
@@ -374,12 +286,7 @@ provider site is protected against data thefts from outsiders. Second, data need
 be protected even from the service providers, if the providers themselves cannot be
 trusted[?].”
 
-```
-Figure 2.1: client server application example
-```
-```
-This paper goes over exploring a large variety of techniques to execute SQL queries
-```
+
 
 over encrypted data. The main strategy which is brought up in this paper the most
 or seen as the optimal technique is to process as much of the query as one can at
@@ -402,8 +309,6 @@ shipping rate from the data table. Then using that exact same datatype to see if
 the country is the same. We can also see what type of shipping methods would be
 possible from these two locations.
 
-Figure 2.2: ”Example of a database in MYSQL which stores different datatype-
-s/citeVeikkolainen”.
 
 So if the shipping is domestic then we can automatically tell the program that
 the only two options are Trucking or Air Freight. Trucking once again is using a big
@@ -450,8 +355,7 @@ international shipping rates to be encrypted and then to use the same algorithm 
 return the results to the user in Javascript.
 
 
-Figure 2.3: ”Example of the method to retain formal data model descriptions between
-server side and browser side objects”.
+
 
 This would be a way that we could ensure the safety of the international shipping
 rates and to keep the data as clean without having to create new descriptions or
@@ -476,8 +380,7 @@ this would be something that can be used much faster if you arent sure how to us
 rather than giving up on it because you didn’t understand it because it was too hard.
 
 
-Figure 2.4: ”Example of the method to retain formal data model descriptions between
-server side and browser side objects”.
+
 
 ### 2.4 geoLocation or Google Maps API?
 
@@ -498,9 +401,7 @@ the values at a faster rate if its possible to attach so many variables to one c
 in a dataset.
 
 
-```
-Figure 2.5: ”Google Maps location flowchart”.
-```
+
 The rest of the data I will be gathering will be first hand research from LSP Cargo.
 The data will all be recovered by grabbing the research through previous orders for
 countries which we do not ship to as popularly or through whatever database LSP
@@ -567,9 +468,7 @@ great reason that we prefer to use NodeJS is its scalability. This system that w
 building is something that we want to continue to scale with other technologies which
 are specified in CH.05.
 
-```
-Figure 3.1: NodeJS Server demonstrating Client-Server requests
-```
+
 #### 3.0.2 ExpressJS: Back-End to Front-End
 
 The next step in our method of approach is to establish what web framework we
@@ -1214,9 +1113,7 @@ server code to get the server started. This is a process that is not hard but it
 to be the very first step.
 
 
-```
-Figure 4.1: Hosting local web server on port 3000
-```
+
 #### 4.1.2 backend to frontend: WARNING! useful content ahead
 
 The next step in the process is going to be what we are populating the database
@@ -1260,9 +1157,7 @@ the most challenging part of the process as there are so many new technologies w
 similar functions that it was a lot of trial and error. With NodeJS we will set our
 port and start the app in the terminal using the ’node app.js’ CLI command.
 
-```
-Figure 4.2: Hosting local web server on port 3000
-```
+
 
 #### 4.1.5 innerHTML forms
 
