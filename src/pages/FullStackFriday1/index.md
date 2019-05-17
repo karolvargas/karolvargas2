@@ -37,4 +37,22 @@ To run Anaconda Navigator can be a little tricky on most linux systems since it 
 
 ![Logo](navigator.png)
 
-#Using 
+#Using Jupyter Notebook and matplotlib library
+
+First thing you want to do when you get to the page above you want to Launch Jupyter Notebook. This is the application that is going to allow us to visualize
+our data. below is a sample program that is going to allow us to us the values in two lists 'x' and 'y' to create a graph in jupyter:
+
+```
+import matplotlib.pyplot as plt
+
+year = [1950, 1948, 1938, 1987]
+
+pop = [2.519, 3.692, 5.263, 6.972]
+
+plt.plot(year. pop)
+
+plt.show()
+
+```
+
+First thing we do is take in the matplotlib.pyplot library and use it as plt. we then set the values for our years as items in a list. Then we set the values for population in another value and store it as pop. We then see the line 'plt.plot(year, pop)'. What this line does is set the year as the values on the x-axis and sets the pop values on the y axis. This is going to give us a line graph. We then use the plt.show() function to display the graph. 
